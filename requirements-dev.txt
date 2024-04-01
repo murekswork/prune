@@ -10,8 +10,11 @@ flake8==7.0.0
     # via
     #   -r requirements-dev.in
     #   flake8-isort
+    #   flake8-pyproject
     #   flake8-walrus
 flake8-isort==6.1.1
+    # via -r requirements-dev.in
+flake8-pyproject==1.2.3
     # via -r requirements-dev.in
 flake8-walrus==1.2.0
     # via -r requirements-dev.in
@@ -36,4 +39,6 @@ pytest==8.1.1
 pytest-django==4.8.0
     # via -r requirements-dev.in
 tomli==2.0.1
-    # via pytest
+    # via
+    #   flake8-pyproject
+    #   pytest

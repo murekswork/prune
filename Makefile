@@ -1,5 +1,7 @@
 deps:
 	pip-compile requirements.in
-	pip-compile dev-requirements.in
-	pip-sync requirements.txt dev-requirements.txt
+	pip-compile requirements-dev.in
+	pip-sync requirements.txt requirements-dev.txt
 
+lint:
+	flake8 src
